@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- Declara que el documento es HTML5 -->
+<html lang="es"> <!-- Define el idioma de la página -->
+<head> <!-- Inicio de la sección del encabezado -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece la escala inicial de la página -->
+    <link rel="stylesheet" href="CSS/Style.css"> <!-- Enlaza la hoja de estilos externa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconecta con el servidor de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconecta con el servidor de Google Fonts de forma segura -->
+    <title>Navegation</title> <!-- Establece el título de la página -->
+</head> <!-- Fin de la sección del encabezado -->
+<body> <!-- Inicio del cuerpo del documento -->
+    <nav class="navbar"> <!-- Define la barra de navegación -->
+        <input type="checkbox" id="toggleMenu"> <!-- Caja de verificación para el menú -->
+        <label for="toggleMenu" class="boton">&#9776;</label> <!-- Etiqueta para el botón del menú -->
+        <ul class="nav-list"> <!-- Lista de opciones de navegación -->
+            <li><a href="Responsive.html">Inicio</a></li> <!-- Opción de navegación: Inicio -->
+            <li><a href="Contacto.html">Contacto</a></li> <!-- Opción de navegación: Contacto -->
+            <li><a href="Mision.html">Misión</a></li> <!-- Opción de navegación: Misión -->
+            <li><a href="vision.html">Visión</a></li> <!-- Opción de navegación: Visión -->
+            <li><a href="nosotros.html">Sobre nosotros</a></li> <!-- Opción de navegación: Sobre nosotros -->
+        </ul> <!-- Fin de la lista de opciones de navegación -->
+    </nav> <!-- Fin de la barra de navegación -->
+    <div class="container"> <!-- Define el contenedor principal -->
+        <div class="backgrounStyle"> <!-- Define un área con un estilo de fondo -->
+            <h1>Bienvenido a nuestra página web</h1> <!-- Título principal -->
+            <p> <!-- Párrafo de texto -->
+                Bienvenido a la empresa "vital". En este apartado conocerás todo lo que necesitas para nuestra empresa
+                dedicada a la purificación del agua, así como para la venta de la misma. ¡Disfruta tu visita!
+            </p> <!-- Fin del párrafo de texto -->
+        </div> <!-- Fin del área con estilo de fondo -->
+    </div> <!-- Fin del contenedor principal -->
+    <footer class="pie"> <!-- Pie de página -->
+        <p>Derechos Reservados 2024</p> <!-- Texto de derechos de autor -->
+    </footer> <!-- Fin del pie de página -->
+    <!-- Inicio del script de JavaScript -->
+    <script> 
+        document.addEventListener('DOMContentLoaded', function () { //Espera a que se cargue el DOM 
+            const toggleButton = document.querySelector('.boton'); //Selecciona el botón de toggle 
+            const navList = document.querySelector('.nav-list'); //Selecciona la lista de navegación 
+
+            toggleButton.addEventListener('click', function () { //Agrega un evento de clic al botón de toggle
+                navList.classList.toggle('active'); //Alterna la clase 'active' en la lista de navegación 
+            });
+        });
+    </script> <!-- Fin del script de JavaScript -->
+</body> <!-- Fin del cuerpo del documento -->
+</html> <!-- Fin del documento HTML -->

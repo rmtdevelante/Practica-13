@@ -1,0 +1,57 @@
+<!DOCTYPE html><!--Esta línea declara que el documento es un documento HTML5.-->
+<html lang="es"><!--Abre el elemento raíz <html> y establece el idioma de la página en español (lang="es").-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>nosotros</title>
+</head>
+<body>
+        <nav class="navbar">
+            <a href="Responsive.html">Inicio</a>
+            <a href="Contacto.html">Contacto</a>
+            <a href="Mision.html">Misión</a>
+            <a href="vision.html">Visión</a>
+            <a href="nosotros.html">Sobre nosotros</a>
+        </nav>
+        <div id="nosotros" class="backgrounStyle04"> 
+            <h1>Nuestra Historia</h1>
+            <p>
+                Hace unos años, en una pequeña ciudad costera, dos amigos, Ana y Carlos, se dieron cuenta de que 
+                la calidad del agua potable no era la mejor en su comunidad. Se preocuparon por la salud de sus 
+                vecinos y decidieron tomar medidas. Juntos, investigaron sobre tecnologías de purificación de agua 
+                y encontraron una solución: instalaron un pequeño sistema de filtración en el garaje de la casa de 
+                Carlos.
+                Inicialmente, comenzaron a ofrecer agua purificada a amigos y familiares, quienes quedaron 
+                impresionados por la calidad y el sabor del agua. Pronto, el boca a boca llevó a un aumento en la 
+                demanda de su producto. Ana y Carlos vieron una oportunidad de negocio y decidieron formalizar su 
+                empresa.
+                Con mucho esfuerzo y determinación, establecieron su propia empresa de purificación de agua:
+                "Agua Pura". Obtuvieron licencias y certificaciones necesarias, invirtieron en equipos de 
+                filtración de alta calidad y establecieron puntos de distribución en toda la ciudad. Con el 
+                tiempo, expandieron su línea de productos para incluir botellas reutilizables y dispensadores 
+                de agua para hogares y oficinas.
+                Gracias a su compromiso con la calidad y la salud pública, así como a su enfoque en el servicio 
+                al cliente, Agua Pura se convirtió en una marca reconocida y respetada en la región. Hoy en día, 
+                su empresa sigue creciendo, y Ana y Carlos están orgullosos de haber contribuido a mejorar la
+                calidad de vida de su comunidad al proporcionar agua limpia y saludable a sus habitantes.
+            </p>    
+        </div>
+    </div>
+<footer class="pie">
+    <p> Derechos Reservados 2024</p>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.querySelector('.boton');
+        const navList = document.querySelector('.nav-list');
+
+        toggleButton.addEventListener('click', function () {
+            navList.classList.toggle('active');
+        });
+    });
+</script>
+</body>
+</html>
